@@ -1,0 +1,100 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gobugminer"
+version = "1.0"
+description = "Mine reproducible multi-granularity defect datasets from Go repositories."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [
+  {name = "Emre Can Yılmaz"},
+  {name = "Recai Oktaş"},
+]
+keywords = ["go", "repository-mining", "szz", "software-metrics", "research-software"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+  "pydriller>=2.7,<3",
+  "pyyaml>=6.0,<7",
+  "tree-sitter>=0.24,<0.27",
+  "tree-sitter-go>=0.23,<0.26",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.3,<2",
+  "cffconvert>=2.0,<3",
+  "mypy>=1.17,<3",
+  "pytest>=8.4,<10",
+  "pytest-cov>=6.2,<8",
+  "ruff>=0.12,<0.17",
+  "types-PyYAML>=6.0,<7",
+]
+
+[dependency-groups]
+dev = [
+  "build>=1.3,<2",
+  "cffconvert>=2.0,<3",
+  "mypy>=1.17,<3",
+  "pytest>=8.4,<10",
+  "pytest-cov>=6.2,<8",
+  "ruff>=0.12,<0.17",
+  "types-PyYAML>=6.0,<7",
+]
+
+[project.scripts]
+gobugminer = "gobugminer.cli:main"
+
+[project.urls]
+Repository = "https://github.com/ecylmz/GoBugMiner"
+Issues = "https://github.com/ecylmz/GoBugMiner/issues"
+Documentation = "https://github.com/ecylmz/GoBugMiner#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gobugminer"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "RUF"]
+ignore = ["S603", "S607"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["gobugminer"]
+
+[[tool.mypy.overrides]]
+module = ["pydriller", "pydriller.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["gobugminer"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+omit = ["*/__main__.py"]

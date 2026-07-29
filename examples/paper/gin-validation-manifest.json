@@ -1,0 +1,52 @@
+{
+  "acquired_target_revision": "34dac209ffb6ef85cc78c5d217bbb7ad001d68fd",
+  "candidate_bic_revisions": [
+    "15216a0883d113fadc33198d24850974eae0f841"
+  ],
+  "excluded_szz_paths_by_category": {
+    "generated_go": 0,
+    "missing_path": 0,
+    "non_go": 0,
+    "production_go": 0,
+    "test_go": 0,
+    "unavailable_source": 0,
+    "vendor": 0
+  },
+  "fix_revision": {
+    "analysis_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "analysis_resolution_reason": "GitHub merge revision is unavailable; the PR head is reachable, analyzable, and verified as an ancestor of the acquired target revision",
+    "evidence_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "fix_commit_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "fix_resolution_policy": "verified_head_fallback",
+    "pull_request_number": "11"
+  },
+  "input_fingerprint": "e413b5f96ee0515ed0c0fc665a4f3983f2eedeff09c392aa98b1dda8e4642f5e",
+  "repository": "gin-gonic/gin",
+  "schema_version": "1",
+  "selected_pull_request": {
+    "analysis_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "analysis_resolution_reason": "GitHub merge revision is unavailable; the PR head is reachable, analyzable, and verified as an ancestor of the acquired target revision",
+    "base_sha": "7a07b26cc2279a1a1e8740de6b5e505044b381e1",
+    "closed_at": "2014-07-01T07:34:49Z",
+    "created_at": "2014-07-01T07:24:01Z",
+    "evidence_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "fix_resolution_policy": "verified_head_fallback",
+    "head_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+    "labels": "type/bug",
+    "merge_commit_sha": "afbe584e17d5960cdb5f66371865eaafe60506fc",
+    "merged": "True",
+    "merged_at": "2014-07-01T07:34:49Z",
+    "number": "11",
+    "url": "https://github.com/gin-gonic/gin/pull/11"
+  },
+  "software_version": "1.0",
+  "source_filter_policy": {
+    "exclude_tests": true,
+    "include_generated_files": false
+  },
+  "szz_path_scope": "production_go",
+  "validation_result": {
+    "errors": [],
+    "valid": true
+  }
+}

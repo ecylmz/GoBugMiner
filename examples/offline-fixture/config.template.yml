@@ -1,0 +1,15 @@
+schema_version: "1"
+project:
+  repository: "gobugminer/offline-fixture"
+  bug_labels: ["bug"]
+mining:
+  levels: [commit, file, method]
+  exclude_tests: true
+  include_generated_files: false
+  szz_path_scope: "production_go"
+paths:
+  output_dir: "FIXTURE_OUTPUT"
+  cache_dir: "./cache"
+offline:
+  repository_path: "FIXTURE_REPOSITORY"
+  pull_requests_path: "FIXTURE_PULL_REQUESTS"

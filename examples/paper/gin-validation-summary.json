@@ -1,0 +1,51 @@
+{
+  "acquired_target_revision": "34dac209ffb6ef85cc78c5d217bbb7ad001d68fd",
+  "analysis_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+  "analysis_resolution_reason": "GitHub merge revision is unavailable; the PR head is reachable, analyzable, and verified as an ancestor of the acquired target revision",
+  "candidate_bic_count": 1,
+  "commit_label_row_count": 2,
+  "commit_metric_row_count": 2,
+  "configured_bug_labels": [
+    "type/bug"
+  ],
+  "dependency_versions": {
+    "PyYAML": "6.0.3",
+    "pydriller": "2.10",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-go": "0.25.0"
+  },
+  "evidence_fix_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+  "exact_command": "uv run gobugminer mine --config examples/paper/gin-validation-v1.0.yml --force",
+  "excluded_szz_paths_by_category": {
+    "generated_go": 0,
+    "missing_path": 0,
+    "non_go": 0,
+    "production_go": 0,
+    "test_go": 0,
+    "unavailable_source": 0,
+    "vendor": 0
+  },
+  "exclusion_count": 1,
+  "file_label_row_count": 7,
+  "file_metric_row_count": 7,
+  "fix_resolution_policy": "verified_head_fallback",
+  "github_merge_sha": "afbe584e17d5960cdb5f66371865eaafe60506fc",
+  "max_prs": 1,
+  "method_label_row_count": 92,
+  "method_metric_row_count": 92,
+  "observation_window": {
+    "since": "2014-07-01T00:00:00+00:00",
+    "until": "2014-07-01T23:59:59+00:00"
+  },
+  "pr_head_sha": "00bb3e2478e7e5a4cfb37b62b4be5880187706ac",
+  "python_version": "3.11.15",
+  "repository": "gin-gonic/gin",
+  "run_date": "2026-07-29",
+  "schema_version": "1",
+  "selected_pull_request_number": 11,
+  "selected_pull_request_url": "https://github.com/gin-gonic/gin/pull/11",
+  "software_version": "1.0",
+  "szz_path_scope": "production_go",
+  "validation_result": true,
+  "warning_count": 0
+}

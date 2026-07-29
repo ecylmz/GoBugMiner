@@ -1,0 +1,21 @@
+GoBugMiner
+Copyright 2026 GoBugMiner contributors
+
+Source code in this repository is licensed under Apache License 2.0.
+
+GoBugMiner was used to construct the GoBug dataset reported in:
+
+Emre Can Yılmaz and Recai Oktaş,
+"GoBug: A Novel Defect Dataset for the Go Programming Language,"
+IEEE Access, vol. 14, pp. 55248-55266, 2026.
+https://doi.org/10.1109/ACCESS.2026.3682160
+
+The study version used a source-defined registry of target Go repositories and
+their project-specific bug labels. The standalone release generalizes this
+selection through YAML configuration and command-line options and adds package
+metadata, provenance, validation, privacy controls, automated tests,
+documentation, and deterministic reproduction infrastructure.
+
+The GoBug dataset, machine-learning experiments, resampling, tuning,
+statistical analyses, and publication-specific outputs are not distributed in
+this repository.

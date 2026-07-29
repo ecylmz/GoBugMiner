@@ -1,0 +1,29 @@
+schema_version: "1"
+project:
+  repository: "gin-gonic/gin"
+  bug_labels: ["type/bug"]
+selection:
+  state: "closed"
+  merged_only: true
+  since: "2014-07-01T00:00:00Z"
+  until: "2014-07-01T23:59:59Z"
+  max_prs: 1
+mining:
+  levels: [commit, file, method]
+  exclude_tests: true
+  include_generated_files: false
+  szz_engine: "pydriller"
+  szz_path_scope: "production_go"
+paths:
+  output_dir: "./runs/gin-validation-v1.0"
+  cache_dir: "./.cache"
+execution:
+  resume: true
+  api_cache: true
+  repository_cache: true
+  workers: 1
+  log_level: INFO
+privacy:
+  include_commit_messages: false
+  include_author_names: false
+  include_author_emails: false

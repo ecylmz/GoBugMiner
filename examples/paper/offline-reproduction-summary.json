@@ -1,0 +1,70 @@
+{
+  "checksum_comparison": {
+    "canonical_outputs_identical": true,
+    "files_compared": [
+      "normalized/pull_requests.csv",
+      "normalized/fix_commits.csv",
+      "normalized/bic_candidates.csv",
+      "normalized/fix_bic_relations.csv",
+      "metrics/commits.csv",
+      "metrics/files.csv",
+      "metrics/methods.csv",
+      "labels/commit_labels.csv",
+      "labels/file_labels.csv",
+      "labels/method_labels.csv"
+    ]
+  },
+  "dependency_versions": {
+    "PyYAML": "6.0.3",
+    "pydriller": "2.10",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-go": "0.25.0"
+  },
+  "excluded_szz_paths_by_category": {
+    "generated_go": 0,
+    "missing_path": 0,
+    "non_go": 0,
+    "production_go": 0,
+    "test_go": 1,
+    "unavailable_source": 0,
+    "vendor": 0
+  },
+  "execution_date": "2026-07-29",
+  "fix_revision_resolutions": [
+    {
+      "analysis_fix_sha": "4a0505f6c50a1a8283187628f82648d31d456a39",
+      "analysis_resolution_reason": "reachable GitHub merge revision provides analyzable accepted modifications",
+      "evidence_fix_sha": "4a0505f6c50a1a8283187628f82648d31d456a39",
+      "fix_resolution_policy": "reachable_squash_sha",
+      "github_merge_sha": "4a0505f6c50a1a8283187628f82648d31d456a39",
+      "pr_head_sha": null,
+      "pull_request_number": 7
+    }
+  ],
+  "output_counts": {
+    "bic_candidate_count": 1,
+    "commit_label_count": 2,
+    "commit_metric_count": 2,
+    "exclusion_count": 2,
+    "file_label_count": 2,
+    "file_metric_count": 2,
+    "fix_commit_count": 1,
+    "method_label_count": 2,
+    "method_metric_count": 2,
+    "pull_request_count": 1,
+    "szz_exclusion_count": 1,
+    "warning_count": 0
+  },
+  "run_count": 2,
+  "schema_version": "1",
+  "software_version": "1.0",
+  "source_filter_policy": {
+    "exclude_tests": true,
+    "include_generated_files": false
+  },
+  "szz_path_scope": "production_go",
+  "validation_result": {
+    "run_1_valid": true,
+    "run_2_valid": true
+  }
+}

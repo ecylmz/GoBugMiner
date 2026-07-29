@@ -1,0 +1,19 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "GoBugMiner",
+  "version": "1.0",
+  "description": "Mine reproducible multi-granularity defect datasets from Go repositories.",
+  "codeRepository": "https://github.com/ecylmz/GoBugMiner",
+  "dateModified": "2026-07-29",
+  "downloadUrl": "https://github.com/ecylmz/GoBugMiner/releases/tag/v1.0",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python >=3.11",
+  "author": [
+    {"@type": "Person", "givenName": "Emre Can", "familyName": "Yılmaz"},
+    {"@type": "Person", "givenName": "Recai", "familyName": "Oktaş"}
+  ],
+  "keywords": ["Go", "repository mining", "SZZ", "software metrics"],
+  "relatedLink": "https://doi.org/10.1109/ACCESS.2026.3682160"
+}

@@ -1,0 +1,28 @@
+schema_version: "1"
+projects:
+  - repository: "hashicorp/consul"
+    bug_labels: ["type/bug"]
+  - repository: "gin-gonic/gin"
+    bug_labels: ["bug"]
+selection:
+  state: "closed"
+  merged_only: true
+  max_prs: 3
+mining:
+  levels: [commit, file, method]
+  exclude_tests: true
+  include_generated_files: false
+  szz_path_scope: "production_go"
+paths:
+  output_dir: "./runs"
+  cache_dir: "~/.cache/gobugminer"
+execution:
+  resume: true
+  api_cache: true
+  repository_cache: true
+  workers: 1
+  log_level: INFO
+privacy:
+  include_commit_messages: false
+  include_author_names: false
+  include_author_emails: false

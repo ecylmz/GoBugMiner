@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "PyYAML": "6.0.3",
+    "pydriller": "2.10",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-go": "0.25.0"
+  },
+  "gh": "gh version 2.96.0 (2026-07-02)",
+  "git": "git version 2.53.0",
+  "gobugminer": "1.0",
+  "python": "3.11.15",
+  "schema": "1"
+}
